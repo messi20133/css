@@ -114,11 +114,24 @@
 
 其他取值： border-box 
 
-[example][https://codepen.io/messi20133/pen/VWjMEd]
+[example](https://codepen.io/messi20133/pen/VWjMEd)
 
 ### 8. 定位
 
+##### static
 
+static 是默认值。任意 position: static; 的元素不会被特殊的定位。一个 static 元素表示它不会被“positioned”，一个 position 属性被设置为其他值的元素表示它会被“positioned”。
+
+##### relative
+
+relative 表现的和 static 一样，除非你添加了一些额外的属性。在一个相对定位（position属性的值为relative）的元素上设置 top 、 right 、 bottom 和 left 属性会使其偏离其正常位置。其他的元素的位置则不会受该元素的影响发生位置改变来弥补它偏离后剩下的空隙。
+
+#### absolute
+元素相对于最近的“positioned”祖先元素定位 。如果绝对定位（position属性的值为absolute）的元素没有“positioned”祖先元素，那么它是相对于文档的 body 元素，并且它会随着页面滚动而移动。记住一个“positioned”元素是指 position 值不是 static 的元素。
+
+[example](https://codepen.io/messi20133/pen/OgXBWB)
+
+### 9.布局
 
 
 
