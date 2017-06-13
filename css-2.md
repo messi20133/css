@@ -91,5 +91,36 @@
 
 ### 7.盒模型
 *理解了盒子模型才能更好的排版！！！！！*
-https://segmentfault.com/a/1190000005155084
+
+在一个文档中，每个元素都被表示为一个矩形的盒子。
+
+在CSS中，使用标准盒模型描述这些矩形盒子中的每一个。这个模型描述了元素所占空间的内容。每个盒子有四个基本属性：外边距, 边框, 内填充边距, 内容。 
+
+![](https://raw.githubusercontent.com/messi20133/css/master/imgs/box.JPG)
+
+标准盒模型的范围包括margin 、border、 padding 、content 四部分， 内容宽度就等于content。
+
+#### 外边距
+用空白区域扩展边框区域,分开相邻元素。需要注意外边距合并问题。
+
+#### 边框
+包含边框的区域，扩展了内边距区域，位于边框边界内部
+
+#### 内边距
+边框到内容的距离，如果内容区域设置了背景颜色或者图片将会延伸到padding上
+
+#### box-sizing 属性
+更改用于计算元素高度和宽度的默认盒模型，默认值是content-box
+
+其他取值： border-box 
+
+[example][https://codepen.io/messi20133/pen/VWjMEd]
+
+### 8. 定位
+
+
+
+
+
+
 
