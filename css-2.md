@@ -135,7 +135,57 @@ relative 表现的和 static 一样，除非你添加了一些额外的属性。
 
 ### 9.布局
 
-利用上面的一些知识做一个三栏布局（三栏， 左中右， 左右固定宽度， 中间自适应）
+利用上面的一些知识做一个三栏布局
+![](https://raw.githubusercontent.com/messi20133/css/master/imgs/shengbei.gif)
+
+三栏布局需要注意：
+
+（1）三栏， 左中右， 左右固定， 中间自适应。
+
+（2）中间内容区域优先展示。
+
+[example](https://codepen.io/messi20133/pen/gRwepq)
+
+### 10. css3新特性
+
+#### 新的选择器
+:nth-clild()， :not(), :first-child, 
+:last-child, :empty, :checked, :enabled, :disabled
+
+#### 边框和颜色
+
+透明度
+	
+	color: rgba(255,0, 0, 0.75)
+
+圆角
+
+	border-radius: 15px
+
+[example](https://codepen.io/messi20133/pen/pwyBgO)
+
+渐变
+
+	-webkit-gradient(linear,0% 0%,100% 0%,from(#2A8BBE),to(#FE280E))
+
+[example]	(https://codepen.io/messi20133/pen/PjNgmJ)
+
+#### 阴影
+	text-shadow:5px 2px 6px rgba(64, 64, 64, 0.5);
+	
+	box-shadow:3px 3px 3px rgba(0, 64, 128, 0.3);
+
+[example](https://codepen.io/messi20133/pen/wezjvz)
+
+#### 动画
+	
+transition  过度
+
+transform  变形
+
+animation  动画
+
+[example](https://codepen.io/messi20133/pen/LLRmVv)
 
 
 
