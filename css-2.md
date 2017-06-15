@@ -1,13 +1,6 @@
 # css基础知识分享
 
-1. css基础
-3. 定位
-4. 页面布局
-5. css3新特性
-
 ---
-
-## css基础
 
 ### 1. 定义
 层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。
@@ -76,9 +69,18 @@
 
 	什么时候用ID,什么时候用类？
 	共同点： 都用于在标记中标识特定标签的html属性，似乎是完全可以相互取代。
-	不同点：
+	不同点：就css而言，唯一不同的地方就是权重问题，除此之外， id是唯一标识，class表示当前元素属于哪一类，另外，id还有页面锚点的作用。
+	
 4. __属性选择器__
+	
+	* 属性名选择符 &nbsp;&nbsp;  标签名[属性名]
 
+	* 属性值选择符 &nbsp;&nbsp;  标签名[属性名=‘属性值’]
+
+5. __伪类选择符__
+	* UI伪类  &nbsp;&nbsp;  例如 a:hover , input:focus 
+	* 结构化伪类 &nbsp;&nbsp; 例如 div: first-child , div:nth-child(n)
+	* 伪元素 &nbsp;&nbsp; 例如 p::first-letter , p::first-line , div::before
 
 ### 6.元素类型
 
@@ -114,13 +116,76 @@
 
 其他取值： border-box 
 
-[example][https://codepen.io/messi20133/pen/VWjMEd]
+[example](https://codepen.io/messi20133/pen/VWjMEd)
 
 ### 8. 定位
 
+##### static
 
+static 是默认值。任意 position: static; 的元素不会被特殊的定位。一个 static 元素表示它不会被“positioned”，一个 position 属性被设置为其他值的元素表示它会被“positioned”。
 
+##### relative
 
+relative 表现的和 static 一样，除非你添加了一些额外的属性。在一个相对定位（position属性的值为relative）的元素上设置 top 、 right 、 bottom 和 left 属性会使其偏离其正常位置。其他的元素的位置则不会受该元素的影响发生位置改变来弥补它偏离后剩下的空隙。
+
+#### absolute
+元素相对于最近的“positioned”祖先元素定位 。如果绝对定位（position属性的值为absolute）的元素没有“positioned”祖先元素，那么它是相对于文档的 body 元素，并且它会随着页面滚动而移动。记住一个“positioned”元素是指 position 值不是 static 的元素。
+
+[example](https://codepen.io/messi20133/pen/OgXBWB)
+
+### 9.布局
+
+利用上面的一些知识做一个三栏布局
+![](https://raw.githubusercontent.com/messi20133/css/master/imgs/shengbei.gif)
+
+三栏布局需要注意：
+
+（1）三栏， 左中右， 左右固定， 中间自适应。
+
+（2）中间内容区域优先展示。
+
+[example](https://codepen.io/messi20133/pen/gRwepq)
+
+### 10. css3新特性
+
+#### 新的选择器
+:nth-clild()， :not(), :first-child, 
+:last-child, :empty, :checked, :enabled, :disabled
+
+#### 边框和颜色
+
+透明度
+	
+	color: rgba(255,0, 0, 0.75)
+
+圆角
+
+	border-radius: 15px
+
+[example](https://codepen.io/messi20133/pen/pwyBgO)
+
+渐变
+
+	-webkit-gradient(linear,0% 0%,100% 0%,from(#2A8BBE),to(#FE280E))
+
+[example]	(https://codepen.io/messi20133/pen/PjNgmJ)
+
+#### 阴影
+	text-shadow:5px 2px 6px rgba(64, 64, 64, 0.5);
+	
+	box-shadow:3px 3px 3px rgba(0, 64, 128, 0.3);
+
+[example](https://codepen.io/messi20133/pen/wezjvz)
+
+#### 动画
+	
+transition  过度
+
+transform  变形
+
+animation  动画
+
+[example](https://codepen.io/messi20133/pen/LLRmVv)
 
 
 
